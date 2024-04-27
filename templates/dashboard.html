@@ -1,0 +1,18 @@
+{% extends 'app.html' %}
+{% block content %}
+
+<div class="container">
+  <h2>welcome to the dashboard</h2>
+    {% if user %}
+    <p>user information</p>
+    <ul>
+        <li>Name : {{ user[1] }}</li>
+        <li>Email : {{ user[2] }}</li>
+    </ul>
+    
+    {% endif %}
+    
+  
+</div>
+
+{% endblock %}
